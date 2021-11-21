@@ -48,7 +48,7 @@ class Sharp(Kipas):
         else :
             capacity = 100
 
-        super(Kipas, self).__init__("Sharp", 12)
+        super(Sharp, self).__init__(f"Sharp {type}", 12)
 
     
     def setGear(self, gear):
@@ -56,20 +56,20 @@ class Sharp(Kipas):
 
 
 
-## Super class
+ ##Super class
 kipas = Kipas("Polytron", 110)
 kipas.setGear(3)
-#kipas.turnOnLamp()
+kipas.turnOnrotasi()
 kipas.detail()
-#kipas.turnOffLamp()
+kipas.turnOffrotasi()
 kipas.detail()
 
-## Subclass
+ ##Subclass
 
 sharp = Sharp("Kamar")
 sharp.setGear(3)
-#sharp.turnOnLamp()
+sharp.turnOnrotasi()
 sharp.detail()
 sharp.setGear(-1)
-#sharp.turnOffLamp()
+sharp.turnOffrotasi()
 sharp.detail()
